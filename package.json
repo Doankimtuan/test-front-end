@@ -2,13 +2,19 @@
   "name": "test-front-end-nal-solution",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://minhlq-0928.github.io/test-front-end/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "bootstrap": "4.6.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-moment": "^1.1.1",
+    "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
     "redux-saga": "^1.1.3",
     "web-vitals": "^1.0.1"
@@ -19,7 +25,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,8 +49,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "babel-plugin-inline-dotenv": "^1.6.0",
-    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
@@ -51,6 +57,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.2"

@@ -1,0 +1,23 @@
+.articledetail__item {
+  background-color: white;
+  display: flex;
+  padding: 20px;
+  width: 65vw;
+  pointer-events: none;
+  align-items: center;
+}
+.articledetail__image {
+  width: "40%";
+}
+
+@media screen and (max-width: 850px) {
+  .media {
+    flex-direction: column;
+  }
+
+  .articledetail__image {
+    margin-right: 0 !important;
+    width: 50vw;
+    margin-bottom: 20px;
+  }
+}
